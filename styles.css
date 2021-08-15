@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: rgb(7, 7, 7);
+  box-sizing: border-box;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+.game {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  font-size: 4rem;
+  z-index: 2;
+}
+
+/* Score Board */
+.score {
+  display: flex;
+  width: 30vw;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 70px;
+  z-index: 1;
+  padding-top: 40px;
+}
+
+/* Score  */
+.p-count,
+.c-count {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* displaying three buttons in one line */
+.options {
+  display: flex;
+  width: 50vw;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+/* Styling on alll three buttons */
+.rock,
+.paper,
+.scissor {
+  padding: 0.8rem;
+  width: 100px;
+  border-radius: 50px;
+  background: rgb(0, 0, 0);
+  outline: none;
+  border-color: rgb(129, 235, 9);
+  border: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+.move {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Reload button style */
+.reload {
+  display: none;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgb(48, 160, 212);
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.reload:hover {
+    border-radius: 25px;
+    background:rgb(48, 212, 171);
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 612px) {
+  .title {
+    text-align: center;
+  }
+  .score {
+    position: absolute;
+    top: 200px;
+    width: 100vw;
+  }
+  .options {
+    width: 100vw;
+  }
+}
